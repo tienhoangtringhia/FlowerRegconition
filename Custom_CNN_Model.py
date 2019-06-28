@@ -234,9 +234,9 @@ f,ax = plt.subplots(figsize = (8,8))
 sns.heatmap(confusion_mtx,annot=True,linewidths = 0.01,cmap="Reds",
             linecolor = "gray",fmt = ".2f",ax=ax
             )
-plt.xlabel("predicted label")
+plt.xlabel("Predicted label")
 plt.ylabel("True Label")
-plt.title("confusion matrix")
+plt.title("Confusion matrix")
 plt.show()
 
 model.save('../output/cusstom_cnn_model.h5') # Save a model as HDF5 file
